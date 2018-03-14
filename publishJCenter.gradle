@@ -2,21 +2,6 @@
 apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
 
-def versionName = "1.0"
-def siteUrl = 'https://github.com/wcl9900/UnityAnnotation'    // project homepage
-def gitUrl = 'https://github.com/wcl9900/UnityAnnotation.git' // project git
-
-def groupId = "com.wcl.jcenter.demo"
-def artifactId = "demo-android"
-
-def repository = "maven"//仓库名称
-def userOrgName = "wangchunlong"//组织名称
-
-//库描述介绍
-def descRep = "UnityAnnotation接口交互管理器绑定逻辑处理"
-//库版本信息描述
-def descVersion = ""
-
 version = versionName
 group = groupId
 install {

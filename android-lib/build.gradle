@@ -33,7 +33,23 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 }
 
-//apply from: 'https://raw.githubusercontent.com/wcl9900/jcenter/9e27f6d3af42ee45e5459af96d5f56ba6e83194c/publishJCenter.gradle'
+ext{
+    versionName = "1.0"
+    siteUrl = 'https://github.com/wcl9900/UnityAnnotation'    // project homepage
+    gitUrl = 'https://github.com/wcl9900/UnityAnnotation.git' // project git
+
+    groupId = "com.wcl.jcenter.demo"
+    artifactId = "demo-android"
+
+    repository = "maven"//仓库名称
+    userOrgName = "wangchunlong"//组织名称
+
+    //库描述介绍
+    descRep = "UnityAnnotation接口交互管理器绑定逻辑处理"
+    //库版本信息描述
+    descVersion = ""
+}
+apply from: 'https://raw.githubusercontent.com/wcl9900/jcenter/master/publishJCenter.gradle'
 
 ////发布 start
 //apply plugin: 'com.github.dcendents.android-maven'

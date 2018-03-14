@@ -6,3 +6,21 @@ dependencies {
 
 sourceCompatibility = "1.7"
 targetCompatibility = "1.7"
+
+ext{
+    versionName = "1.0"//版本号
+    siteUrl = 'https://github.com/wcl9900/UnityAnnotation'    // project homepage
+    gitUrl = 'https://github.com/wcl9900/UnityAnnotation.git' // project git
+
+    groupId = "com.wcl.jcenter.demo" //组名称
+    artifactId = "demo-java"
+
+    repository = "maven"//仓库名称
+    userOrgName = "wangchunlong"//组织名称
+
+    //库描述介绍
+    descRep = "jcenter java demo"
+    //库版本信息描述
+    descVersion = ""
+}
+apply from: 'https://raw.githubusercontent.com/wcl9900/jcenter/master/publishJCenter.gradle'

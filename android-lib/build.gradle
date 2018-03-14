@@ -34,133 +34,19 @@ dependencies {
 }
 
 ext{
-    versionName = "1.0"
+    versionName = "1.0"//版本号
     siteUrl = 'https://github.com/wcl9900/UnityAnnotation'    // project homepage
     gitUrl = 'https://github.com/wcl9900/UnityAnnotation.git' // project git
 
-    groupId = "com.wcl.jcenter.demo"
+    groupId = "com.wcl.jcenter.demo" //组名称
     artifactId = "demo-android"
 
     repository = "maven"//仓库名称
     userOrgName = "wangchunlong"//组织名称
 
     //库描述介绍
-    descRep = "UnityAnnotation接口交互管理器绑定逻辑处理"
+    descRep = "jcenter android demo"
     //库版本信息描述
     descVersion = ""
 }
 apply from: 'https://raw.githubusercontent.com/wcl9900/jcenter/master/publishJCenter.gradle'
-
-////发布 start
-//apply plugin: 'com.github.dcendents.android-maven'
-//apply plugin: 'com.jfrog.bintray'
-//
-//version = '1.0'
-//
-//def siteUrl = 'https://github.com/wcl9900/UnityAnnotation'    // project homepage
-//def gitUrl = 'https://github.com/wcl9900/UnityAnnotation.git' // project git
-//
-//group = "com.wcl.unity.interaction"
-//def artifactId = "unity-call"
-//
-//def repository = "maven"//仓库名称
-//def packagingType = "jar"//jar、aar
-//def userOrgName = "wangchunlong"//组织名称
-//
-////库描述介绍
-//def descRep = "UnityAnnotation接口交互管理器绑定逻辑处理"
-////库版本信息描述
-//def descVersion = ""
-//
-//install {
-//    repositories.mavenInstaller {
-//        // This generates POM.xml with proper parameters
-//        pom {
-//            project {
-//                packaging packagingType
-//                name artifactId
-//                url siteUrl
-//                licenses {
-//                    license {
-//                        name 'The Apache Software License, Version 2.0'
-//                        url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
-//                    }
-//                }
-//                developers {
-//                    developer {
-//                        id 'wcl99'
-//                        name 'wangchunlong'
-//                        email '990017809@163.com'
-//                    }
-//                }
-//                scm {
-//                    connection gitUrl
-//                    developerConnection gitUrl
-//                    url siteUrl
-//                }
-//            }
-//        }
-//    }
-//}
-//if (project.hasProperty("android")) { // Android libraries
-//    task sourcesJar(type: Jar) {
-//        from android.sourceSets.main.java.srcDirs
-//        classifier = 'sources'
-//    }
-//
-//    task javadoc(type: Javadoc) {
-//        source = android.sourceSets.main.java.srcDirs
-//        classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
-//    }
-//}
-//else { // Java libraries
-//    task sourcesJar(type: Jar, dependsOn: classes) {
-//        classifier = 'sources'
-//        from sourceSets.main.allSource
-//    }
-//}
-//
-//task javadocJar(type: Jar, dependsOn: javadoc) {
-//    classifier = 'javadoc'
-//    from javadoc.destinationDir
-//}
-//
-//artifacts {
-//    archives javadocJar
-//    archives sourcesJar
-//}
-//
-//Properties properties = new Properties()
-//boolean isHasFile = false
-//if (project.rootProject.file('local.properties') != null){
-//    isHasFile = true
-//    properties.load(project.rootProject.file('local.properties').newDataInputStream())
-//}
-//bintray {
-//    user = isHasFile ? properties.getProperty("bintray.user") : System.getenv("bintray.user")
-//    key = isHasFile ? properties.getProperty("bintray.apikey") : System.getenv("bintray.apikey")
-//    configurations = ['archives']
-//    pkg {
-//        repo = repository
-//        name = artifactId
-//        userOrg = userOrgName
-//        websiteUrl = siteUrl
-//        vcsUrl = gitUrl
-//        licenses = ["Apache-2.0"]
-//        publish = true
-//        publicDownloadNumbers = true
-//        desc = descRep
-//        version {
-////            name = '1.0'
-//            desc = descVersion
-//            released  = new Date()
-//        }
-//    }
-//    javadoc { //jav doc采用utf-8编码否则会报“GBK的不可映射字符”错误
-//        options {
-//            encoding "UTF-8"
-//            charSet 'UTF-8'
-//        }
-//    }
-//}
-////发布 end

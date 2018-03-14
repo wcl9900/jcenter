@@ -2,16 +2,14 @@
 apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
 
-version = '1.0'
-
+def versionName = "1.0"
 def siteUrl = 'https://github.com/wcl9900/UnityAnnotation'    // project homepage
 def gitUrl = 'https://github.com/wcl9900/UnityAnnotation.git' // project git
 
-group = "com.wcl.unity.interaction"
+def groupId = "com.wcl.unity.interaction"
 def artifactId = "unity-call"
 
 def repository = "maven"//仓库名称
-def packagingType = "jar"//jar、aar
 def userOrgName = "wangchunlong"//组织名称
 
 //库描述介绍
@@ -19,12 +17,14 @@ def descRep = "UnityAnnotation接口交互管理器绑定逻辑处理"
 //库版本信息描述
 def descVersion = ""
 
+version = versionName
+group = groupId
 install {
     repositories.mavenInstaller {
         // This generates POM.xml with proper parameters
         pom {
             project {
-                packaging packagingType
+                packaging 'jar'
                 name artifactId
                 url siteUrl
                 licenses {

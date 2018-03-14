@@ -6,8 +6,8 @@ def versionName = "1.0"
 def siteUrl = 'https://github.com/wcl9900/UnityAnnotation'    // project homepage
 def gitUrl = 'https://github.com/wcl9900/UnityAnnotation.git' // project git
 
-def groupId = "com.wcl.unity.interaction"
-def artifactId = "unity-call"
+def groupId = "com.wcl.jcenter.demo"
+def artifactId = "demo-android"
 
 def repository = "maven"//仓库名称
 def userOrgName = "wangchunlong"//组织名称

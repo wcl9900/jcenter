@@ -23,4 +23,5 @@ ext{
     //库版本信息描述
     descVersion = ""
 }
-apply from: 'https://raw.githubusercontent.com/wcl9900/jcenter/master/publishJCenter.gradle'
+apply from: 'https://raw.githubusercontent.com/wcl9900/jcenter/master/publishJCenter.gradle'//github托管
+//apply from: 'https://gitee.com/wcl9900/jcenter/raw/master/publishJCenter.gradle'//码云托管
